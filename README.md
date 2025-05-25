@@ -130,33 +130,6 @@ classDiagram
     Principal --> Sudoku : creates
     MovimientoInvalidoException --|> SudokuException : extends
 ```
-
-### 🎭 Diagrama de Casos de Uso
-
-```mermaid
-graph TD
-    Usuario[👤 Usuario]
-    
-    UC1[Generar Nuevo Juego]
-    UC2[Introducir Número]
-    UC3[Validar Movimiento]
-    UC4[Resolver Automáticamente]
-    UC5[Comprobar Solución]
-    UC6[Reiniciar Juego]
-    UC7[Seleccionar Dificultad]
-    
-    Usuario --> UC1
-    Usuario --> UC2
-    Usuario --> UC4
-    Usuario --> UC5
-    Usuario --> UC6
-    Usuario --> UC7
-    
-    UC1 --> UC7 : includes
-    UC2 --> UC3 : includes
-    UC5 --> UC3 : includes
-```
-
 ---
 
 ## 🔗 4. Matriz de Trazabilidad
